@@ -1,0 +1,38 @@
+
+CAMPUS EVENTS APP - SETUP INSTRUCTIONS
+========================================
+
+FOR THE LECTURER:
+
+STEP 1: Install Python Packages
+-------------------------------
+- Double-click the file: INSTALL_PACKAGES.bat
+- Wait for it to finish (a window will open and close)
+- This installs Flask and other required packages
+
+STEP 2: Start the Backend Server
+--------------------------------
+- Double-click the file: START_ME.bat
+- IMPORTANT: Keep this window OPEN while using the app!
+- You should see: "Running on http://127.0.0.1:5000"
+
+STEP 3: Run the Flutter App
+---------------------------
+1. Open Android Studio
+2. Open the project from: C:\Users\HP\StudioProjects\campus_event_app
+3. Click the green Run button (▶️)
+4. The app will launch in the emulator or Chrome
+
+TEST ACCOUNTS:
+--------------
+Admin:  admin@university.com / admin123
+Student: student@university.com / student123
+
+TROUBLESHOOTING:
+----------------
+If you see "Connection refused" error:
+- Make sure STEP 2 is running (the black window is open)
+- For emulator, run this command:
+  adb reverse tcp:5000 tcp:5000
+
+========================================
